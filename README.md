@@ -39,52 +39,42 @@ It uses geospatial analysis, machine learning, and real-time map data to compute
 ## 🗂️ Project Structure
 
 
-courieriq/
-│
-├── src/
-│ ├── data/
-│ │ ├── raw/ # original datasets
-│ │ ├── processed/ # cleaned + ready for training
-│ │ └── geo/ # geospatial reference files
-│ │
-│ ├── models/
-│ │ ├── eta_regressor.pkl
-│ │ └── init.py
-│ │
-│ ├── engine/
-│ │ ├── optimizer.py # multi-stop route optimization logic
-│ │ ├── routing.py # API calls (Google/OSRM)
-│ │ ├── scorer.py # scoring & ranking of route candidates
-│ │ ├── heatmap.py # geospatial analysis
-│ │ └── init.py
-│ │
-│ ├── api/
-│ │ ├── main.py # FastAPI app
-│ │ ├── schemas.py # validation models
-│ │ └── controllers.py
-│ │
-│ ├── utils/
-│ │ ├── config.py
-│ │ ├── logger.py
-│ │ └── helpers.py
-│ │
-│ └── init.py
-│
-├── notebooks/
-│ ├── 01_exploration.ipynb
-│ ├── 02_feature_engineering.ipynb
-│ └── 03_model_training.ipynb
-│
-├── tests/
-│ ├── test_optimizer.py
-│ ├── test_routing.py
-│ └── test_api.py
-│
-├── requirements.txt
-├── README.md
-└── LICENSE
 
+### Directory Overview
 
+- **`src/data/`** - Data storage and management
+  - `raw/`: Original, unprocessed datasets
+  - `processed/`: Cleaned and transformed data ready for model training
+  - `geo/`: Geospatial files (shapefiles, GeoJSON, etc.)
+
+- **`src/engine/`** - Core routing and optimization logic
+  - `optimizer.py`: Implements multi-stop route optimization algorithms
+  - `routing.py`: Handles external routing API calls (Google Maps, OSRM)
+  - `scorer.py`: Scores and ranks alternative route candidates
+  - `heatmap.py`: Performs geospatial analysis and generates heatmaps
+
+- **`src/api/`** - Web API layer
+  - `main.py`: FastAPI application setup and route definitions
+  - `schemas.py`: Pydantic models for request/response validation
+  - `controllers.py`: Business logic and request handling
+
+- **`src/models/`** - Machine learning models
+  - `eta_regressor.pkl`: Serialized ETA prediction model
+  - Model training and inference utilities
+
+- **`src/utils/`** - Shared utilities
+  - `config.py`: Configuration management and environment variables
+  - `logger.py`: Logging configuration and custom loggers
+  - `helpers.py`: Reusable helper functions
+
+- **`notebooks/`** - Jupyter notebooks for analysis and prototyping
+  - Exploratory data analysis and visualization
+  - Feature engineering experiments
+  - Model training and evaluation
+
+- **`tests/`** - Test suite
+  - Unit tests for all major components
+  - Integration tests for API endpoints
 
 ---
 
