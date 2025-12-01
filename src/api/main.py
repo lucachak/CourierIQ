@@ -3,6 +3,8 @@ import logging
 from fastapi import FastAPI, Path
 from fastapi.responses import JSONResponse
 
+from src.api.controllers.deliveries import router as deliveries_router
+from src.api.controllers.routes import router as routes_router
 from src.utils.config import load_settings
 
 config = load_settings()
@@ -20,6 +22,9 @@ app = FastAPI(
     docs_url="/docs",
     redoc_url="/redoc",
 )
+
+app.include_router(deliveries_router)
+app.include_router(routes_router)
 
 
 # -------------------------------
@@ -47,24 +52,6 @@ async def show_config():
             "THREAT_SCORE_THRESHOLD": config.automation.THREAT_SCORE_THRESHOLD,
         },
     }
-
-
-# -------------------------------
-# Deliveries
-# -------------------------------
-@app.get("/deliveries", tags=["Deliveries"])
-async def list_deliveries():
-    return {"deliveries": []}
-
-
-@app.post("/deliveries", tags=["Deliveries"])
-async def create_delivery():
-    return {"status": "mock created"}
-
-
-@app.get("/deliveries/{delivery_id}", tags=["Deliveries"])
-async def get_delivery(delivery_id: int = Path(...)):
-    return {"delivery_id": delivery_id, "status": "mock"}
 
 
 # -------------------------------

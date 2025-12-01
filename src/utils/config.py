@@ -88,7 +88,7 @@ class EnvConfig:
 
 class AppConfig:
     def __init__(self) -> None:
-        self.LOG_LEVELS = ["INFO, DEBUG, WARNING, ERROR"]
+        self.LOG_LEVELS = ["INFO", "DEBUG", "WARNING", "ERROR"]
         self.FALLBACK = ["SAFE", "STRICT", "PERMISSIVE"]
 
         self.LOG_LEVEL = self.LOG_LEVELS[0]
