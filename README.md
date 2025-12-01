@@ -126,7 +126,3 @@ Model retraining is handled through Jupyter notebooks located in `/notebooks`.
 - [ ] Driver statistics panel (acceptance rate, speed, efficiency)  
 
 ---
-
-## 📜 License
-
-MIT License.
