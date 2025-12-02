@@ -1,6 +1,7 @@
 class AutomationService:
 
     def __init__(self):
+
         # Simulação de banco de dados em memória
         self.tasks = {}
         self.next_id = 1

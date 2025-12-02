@@ -18,7 +18,6 @@ class UserResponse(BaseModel):
     class Config:
         orm_mode = True
 
-
 class AutomationRequest(BaseModel):
     name: str
     description: Optional[str] = None
