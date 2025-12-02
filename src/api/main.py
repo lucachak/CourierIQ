@@ -5,6 +5,10 @@ from fastapi.responses import JSONResponse
 
 from src.api.controllers.deliveries import router as deliveries_router
 from src.api.controllers.routes import router as routes_router
+from src.api.controllers.automation import router as automation_router
+from src.api.controllers.monitor import router as monitor_router
+from src.api.controllers.users import router as user_router
+
 from src.utils.config import load_settings
 
 config = load_settings()
@@ -25,7 +29,9 @@ app = FastAPI(
 
 app.include_router(deliveries_router)
 app.include_router(routes_router)
-
+app.include_router(automation_router)
+app.include_router(monitor_router)
+app.include_router(user_router)
 
 @app.get("/health", tags=["Health"])
 async def healthcheck():
@@ -51,39 +57,11 @@ async def show_config():
     }
 
 
-@app.get("/users", tags=["Users"])
-async def list_users():
-    return {"users": []}
-
-
-@app.get("/users/{user_id}", tags=["Users"])
-async def get_user(user_id: int = Path(...)):
-    return {"user_id": user_id, "status": "mock"}
-
-
-@app.post("/users", tags=["Users"])
-async def create_user():
-    return {"status": "mock created"}
-
-
-@app.get("/monitor/status", tags=["Monitor"])
-async def monitor_status():
-    return {"monitor": "running"}
-
-
 @app.get("/logs", tags=["Monitor"])
 async def get_logs():
     return {"logs": []}
 
 
-@app.post("/automation/run", tags=["Automation"])
-async def run_automation():
-    return {"automation": "started"}
-
-
-@app.get("/automation/status", tags=["Automation"])
-async def automation_status():
-    return {"status": "idle"}
 
 
 @app.on_event("startup")
