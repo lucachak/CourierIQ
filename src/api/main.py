@@ -27,9 +27,6 @@ app.include_router(deliveries_router)
 app.include_router(routes_router)
 
 
-# -------------------------------
-# Health & Config
-# -------------------------------
 @app.get("/health", tags=["Health"])
 async def healthcheck():
     return {"status": "ok", "debug": config.app.DEBUG, "version": "1.0.0"}
@@ -54,27 +51,6 @@ async def show_config():
     }
 
 
-# -------------------------------
-# Routes / Optimizer
-# -------------------------------
-@app.post("/routes/optimize", tags=["Routes"])
-async def optimize_route():
-    return {"route": "mock optimized"}
-
-
-@app.get("/routes/{route_id}", tags=["Routes"])
-async def get_route(route_id: int = Path(...)):
-    return {"route_id": route_id, "status": "mock"}
-
-
-@app.get("/routes/history", tags=["Routes"])
-async def get_route_history():
-    return {"history": []}
-
-
-# -------------------------------
-# Users / Couriers
-# -------------------------------
 @app.get("/users", tags=["Users"])
 async def list_users():
     return {"users": []}
@@ -90,9 +66,6 @@ async def create_user():
     return {"status": "mock created"}
 
 
-# -------------------------------
-# Monitoring
-# -------------------------------
 @app.get("/monitor/status", tags=["Monitor"])
 async def monitor_status():
     return {"monitor": "running"}
@@ -103,9 +76,6 @@ async def get_logs():
     return {"logs": []}
 
 
-# -------------------------------
-# Automation / AI
-# -------------------------------
 @app.post("/automation/run", tags=["Automation"])
 async def run_automation():
     return {"automation": "started"}
@@ -116,9 +86,6 @@ async def automation_status():
     return {"status": "idle"}
 
 
-# -------------------------------
-# Startup / Shutdown
-# -------------------------------
 @app.on_event("startup")
 async def startup_event():
     logger.info("📦 CourierIQ API is starting up...")

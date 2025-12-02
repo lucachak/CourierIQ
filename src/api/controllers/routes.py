@@ -1,6 +1,6 @@
 from typing import List, Optional
 
-from fastapi import APIRouter, Query
+from fastapi import APIRouter, Path, Query
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 
@@ -38,7 +38,6 @@ async def optimize_route(request: RouteRequest):
     """
     segments = []
 
-    # fake values
     for idx, dst in enumerate(request.destinations):
         seg = RouteSegment(
             start=request.origin if idx == 0 else request.destinations[idx - 1],
@@ -66,16 +65,13 @@ async def get_eta(
     Returns a mock ETA (in minutes).
     In the future this calls `models/eta_regressor.pkl`
     """
+
     eta = abs(dest_lat - origin_lat) * 10 + abs(dest_lon - origin_lon) * 8
     return {"eta_minutes": round(eta, 2)}
 
 
 @router.get("/heatmap")
 async def heatmap():
-    """
-    Returns a mock density map.
-    In the future this will use `engine/heatmap.py`
-    """
     return {
         "clusters": [
             {"lat": 47.49, "lon": 19.04, "intensity": 0.85},
@@ -90,3 +86,13 @@ async def preview_route():
     Returns a mock preview link (later → real static map or canvas).
     """
     return {"image_url": "https://example.com/mock-route-preview.png"}
+
+
+@router.get("/routes/{route_id}", tags=["Routes"])
+async def get_route(route_id: int = Path(...)):
+    return {"route_id": route_id, "status": "mock"}
+
+
+@router.get("/routes/history", tags=["Routes"])
+async def get_route_history():
+    return {"history": []}
