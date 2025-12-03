@@ -87,7 +87,7 @@ class ProductionTester:
             max_retries = 30
             for i in range(max_retries):
                 try:
-                    response = requests.get(f"{self.base_url}/health", timeout=2)
+                    response = requests.get(f"{self.base_url}/health-check", timeout=2)
                     if response.status_code == 200:
                         self.print_success("Server started successfully")
                         return True
@@ -114,7 +114,7 @@ class ProductionTester:
         self.print_test("Health Check")
 
         try:
-            response = requests.get(f"{self.base_url}/health", timeout=5)
+            response = requests.get(f"{self.base_url}/health-check", timeout=5)
 
             if response.status_code == 200:
                 data = response.json()

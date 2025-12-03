@@ -156,6 +156,13 @@ class RoutingService:
         else:
             logger.error("Unknown provider for distance matrix: %s", provider)
             return None
+    @property
+    def providers(self) -> List[str]:
+        """List available providers"""
+        available = ['osrm']
+        if self.google_api_key:
+            available.append('google')
+        return available
 
     def get_directions(
         self,

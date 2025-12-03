@@ -1,0 +1,33 @@
+{
+  "timestamp": "2025-12-03T10:02:32.680735",
+  "summary": {
+    "total": 15,
+    "passed": 9,
+    "failed": 5,
+    "warnings": 1,
+    "pass_rate": 60.0
+  },
+  "results": {
+    "passed": [
+      "Health check",
+      "Algorithm comparison",
+      "Heatmap generation",
+      "Dynamic reoptimization",
+      "Route scoring",
+      "Error handling: Invalid coordinates",
+      "Error handling: Missing required fields",
+      "Error handling: Invalid algorithm",
+      "API documentation"
+    ],
+    "failed": [
+      "Optimization: Small delivery (3 stops)",
+      "Optimization: Medium delivery (7 stops)",
+      "Optimization: Nearest neighbor (fast)",
+      "ETA: Short distance",
+      "ETA: High traffic"
+    ],
+    "warnings": [
+      "Performance under load"
+    ]
+  }
+}

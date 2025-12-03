@@ -33,9 +33,9 @@ app.include_router(monitor_router)
 app.include_router(user_router)
 
 
-@app.get("/health", tags=["Health"])
+@app.get("/health-check", tags=["Health"])
 async def health_check():
-    return {"status": "ok", "debug": config.app.DEBUG, "version": "1.0.0"}
+    return {"status": "ok", "debug": config.app.DEBUG, "version": "V1.1"}
 
 
 @app.get("/config", tags=["Visual"])
