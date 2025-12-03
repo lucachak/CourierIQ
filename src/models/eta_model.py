@@ -405,7 +405,7 @@ def generate_synthetic_training_data(n_samples: int = 1000) -> pd.DataFrame:
             "origin_lon": np.random.uniform(-74.5, -73.5, n_samples),
             "dest_lat": np.random.uniform(40.0, 41.0, n_samples),
             "dest_lon": np.random.uniform(-74.5, -73.5, n_samples),
-            "timestamp": pd.date_range("2024-01-01", periods=n_samples, freq="1H"),
+            "timestamp": pd.date_range("2024-01-01", periods=n_samples, freq="1h"),
             "num_stops": np.random.randint(1, 10, n_samples),
             "traffic_level": np.random.uniform(0.2, 0.9, n_samples),
             "preparation_time": np.random.uniform(300, 1800, n_samples),

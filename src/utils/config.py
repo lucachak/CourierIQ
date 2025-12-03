@@ -97,7 +97,7 @@ class AppConfig:
         self.MAX_REQUESTS_PER_MINUTE = 60
         self.GLOBAL_TIMEOUT = 10  # sec
 
-        self.DEBUG = False
+        self.DEBUG = True
         self.ENABLE_RATE_LIMIT = True
         self.ENABLE_AI_FEATURES = True
 

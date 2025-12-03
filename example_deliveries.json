@@ -1,0 +1,402 @@
+[
+  {
+    "lat": 40.7128,
+    "lon": -74.006,
+    "delivery_time": 600,
+    "distance": 1000,
+    "status": "failed",
+    "hour": 9
+  },
+  {
+    "lat": 40.7228,
+    "lon": -73.996,
+    "delivery_time": 700,
+    "distance": 1500,
+    "status": "success",
+    "hour": 10
+  },
+  {
+    "lat": 40.732800000000005,
+    "lon": -73.986,
+    "delivery_time": 800,
+    "distance": 2000,
+    "status": "success",
+    "hour": 11
+  },
+  {
+    "lat": 40.7428,
+    "lon": -73.976,
+    "delivery_time": 900,
+    "distance": 2500,
+    "status": "success",
+    "hour": 12
+  },
+  {
+    "lat": 40.7528,
+    "lon": -73.966,
+    "delivery_time": 1000,
+    "distance": 3000,
+    "status": "success",
+    "hour": 13
+  },
+  {
+    "lat": 40.7628,
+    "lon": -73.956,
+    "delivery_time": 1100,
+    "distance": 3500,
+    "status": "failed",
+    "hour": 14
+  },
+  {
+    "lat": 40.772800000000004,
+    "lon": -73.946,
+    "delivery_time": 1200,
+    "distance": 4000,
+    "status": "success",
+    "hour": 15
+  },
+  {
+    "lat": 40.7828,
+    "lon": -73.936,
+    "delivery_time": 1300,
+    "distance": 4500,
+    "status": "success",
+    "hour": 16
+  },
+  {
+    "lat": 40.7928,
+    "lon": -73.926,
+    "delivery_time": 1400,
+    "distance": 5000,
+    "status": "success",
+    "hour": 17
+  },
+  {
+    "lat": 40.802800000000005,
+    "lon": -73.916,
+    "delivery_time": 1500,
+    "distance": 5500,
+    "status": "success",
+    "hour": 18
+  },
+  {
+    "lat": 40.8128,
+    "lon": -73.906,
+    "delivery_time": 1600,
+    "distance": 6000,
+    "status": "failed",
+    "hour": 19
+  },
+  {
+    "lat": 40.8228,
+    "lon": -73.896,
+    "delivery_time": 1700,
+    "distance": 6500,
+    "status": "success",
+    "hour": 20
+  },
+  {
+    "lat": 40.8328,
+    "lon": -73.886,
+    "delivery_time": 1800,
+    "distance": 7000,
+    "status": "success",
+    "hour": 9
+  },
+  {
+    "lat": 40.842800000000004,
+    "lon": -73.876,
+    "delivery_time": 1900,
+    "distance": 7500,
+    "status": "success",
+    "hour": 10
+  },
+  {
+    "lat": 40.8528,
+    "lon": -73.866,
+    "delivery_time": 2000,
+    "distance": 8000,
+    "status": "success",
+    "hour": 11
+  },
+  {
+    "lat": 40.8628,
+    "lon": -73.856,
+    "delivery_time": 2100,
+    "distance": 8500,
+    "status": "failed",
+    "hour": 12
+  },
+  {
+    "lat": 40.8728,
+    "lon": -73.846,
+    "delivery_time": 2200,
+    "distance": 9000,
+    "status": "success",
+    "hour": 13
+  },
+  {
+    "lat": 40.8828,
+    "lon": -73.836,
+    "delivery_time": 2300,
+    "distance": 9500,
+    "status": "success",
+    "hour": 14
+  },
+  {
+    "lat": 40.8928,
+    "lon": -73.826,
+    "delivery_time": 2400,
+    "distance": 10000,
+    "status": "success",
+    "hour": 15
+  },
+  {
+    "lat": 40.9028,
+    "lon": -73.816,
+    "delivery_time": 2500,
+    "distance": 10500,
+    "status": "success",
+    "hour": 16
+  },
+  {
+    "lat": 40.912800000000004,
+    "lon": -73.806,
+    "delivery_time": 2600,
+    "distance": 11000,
+    "status": "failed",
+    "hour": 17
+  },
+  {
+    "lat": 40.9228,
+    "lon": -73.796,
+    "delivery_time": 2700,
+    "distance": 11500,
+    "status": "success",
+    "hour": 18
+  },
+  {
+    "lat": 40.9328,
+    "lon": -73.786,
+    "delivery_time": 2800,
+    "distance": 12000,
+    "status": "success",
+    "hour": 19
+  },
+  {
+    "lat": 40.9428,
+    "lon": -73.776,
+    "delivery_time": 2900,
+    "distance": 12500,
+    "status": "success",
+    "hour": 20
+  },
+  {
+    "lat": 40.9528,
+    "lon": -73.766,
+    "delivery_time": 3000,
+    "distance": 13000,
+    "status": "success",
+    "hour": 9
+  },
+  {
+    "lat": 40.9628,
+    "lon": -73.756,
+    "delivery_time": 3100,
+    "distance": 13500,
+    "status": "failed",
+    "hour": 10
+  },
+  {
+    "lat": 40.9728,
+    "lon": -73.746,
+    "delivery_time": 3200,
+    "distance": 14000,
+    "status": "success",
+    "hour": 11
+  },
+  {
+    "lat": 40.982800000000005,
+    "lon": -73.736,
+    "delivery_time": 3300,
+    "distance": 14500,
+    "status": "success",
+    "hour": 12
+  },
+  {
+    "lat": 40.9928,
+    "lon": -73.726,
+    "delivery_time": 3400,
+    "distance": 15000,
+    "status": "success",
+    "hour": 13
+  },
+  {
+    "lat": 41.0028,
+    "lon": -73.716,
+    "delivery_time": 3500,
+    "distance": 15500,
+    "status": "success",
+    "hour": 14
+  },
+  {
+    "lat": 41.0128,
+    "lon": -73.706,
+    "delivery_time": 3600,
+    "distance": 16000,
+    "status": "failed",
+    "hour": 15
+  },
+  {
+    "lat": 41.022800000000004,
+    "lon": -73.696,
+    "delivery_time": 3700,
+    "distance": 16500,
+    "status": "success",
+    "hour": 16
+  },
+  {
+    "lat": 41.0328,
+    "lon": -73.686,
+    "delivery_time": 3800,
+    "distance": 17000,
+    "status": "success",
+    "hour": 17
+  },
+  {
+    "lat": 41.0428,
+    "lon": -73.676,
+    "delivery_time": 3900,
+    "distance": 17500,
+    "status": "success",
+    "hour": 18
+  },
+  {
+    "lat": 41.052800000000005,
+    "lon": -73.666,
+    "delivery_time": 4000,
+    "distance": 18000,
+    "status": "success",
+    "hour": 19
+  },
+  {
+    "lat": 41.0628,
+    "lon": -73.656,
+    "delivery_time": 4100,
+    "distance": 18500,
+    "status": "failed",
+    "hour": 20
+  },
+  {
+    "lat": 41.0728,
+    "lon": -73.646,
+    "delivery_time": 4200,
+    "distance": 19000,
+    "status": "success",
+    "hour": 9
+  },
+  {
+    "lat": 41.0828,
+    "lon": -73.636,
+    "delivery_time": 4300,
+    "distance": 19500,
+    "status": "success",
+    "hour": 10
+  },
+  {
+    "lat": 41.092800000000004,
+    "lon": -73.626,
+    "delivery_time": 4400,
+    "distance": 20000,
+    "status": "success",
+    "hour": 11
+  },
+  {
+    "lat": 41.1028,
+    "lon": -73.616,
+    "delivery_time": 4500,
+    "distance": 20500,
+    "status": "success",
+    "hour": 12
+  },
+  {
+    "lat": 41.1128,
+    "lon": -73.606,
+    "delivery_time": 4600,
+    "distance": 21000,
+    "status": "failed",
+    "hour": 13
+  },
+  {
+    "lat": 41.1228,
+    "lon": -73.596,
+    "delivery_time": 4700,
+    "distance": 21500,
+    "status": "success",
+    "hour": 14
+  },
+  {
+    "lat": 41.1328,
+    "lon": -73.586,
+    "delivery_time": 4800,
+    "distance": 22000,
+    "status": "success",
+    "hour": 15
+  },
+  {
+    "lat": 41.1428,
+    "lon": -73.576,
+    "delivery_time": 4900,
+    "distance": 22500,
+    "status": "success",
+    "hour": 16
+  },
+  {
+    "lat": 41.1528,
+    "lon": -73.566,
+    "delivery_time": 5000,
+    "distance": 23000,
+    "status": "success",
+    "hour": 17
+  },
+  {
+    "lat": 41.162800000000004,
+    "lon": -73.556,
+    "delivery_time": 5100,
+    "distance": 23500,
+    "status": "failed",
+    "hour": 18
+  },
+  {
+    "lat": 41.1728,
+    "lon": -73.546,
+    "delivery_time": 5200,
+    "distance": 24000,
+    "status": "success",
+    "hour": 19
+  },
+  {
+    "lat": 41.1828,
+    "lon": -73.536,
+    "delivery_time": 5300,
+    "distance": 24500,
+    "status": "success",
+    "hour": 20
+  },
+  {
+    "lat": 41.1928,
+    "lon": -73.526,
+    "delivery_time": 5400,
+    "distance": 25000,
+    "status": "success",
+    "hour": 9
+  },
+  {
+    "lat": 41.2028,
+    "lon": -73.516,
+    "delivery_time": 5500,
+    "distance": 25500,
+    "status": "success",
+    "hour": 10
+  }
+]

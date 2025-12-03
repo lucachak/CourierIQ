@@ -1,0 +1,29 @@
+{
+  "depot": {
+    "lat": 40.7128,
+    "lon": -74.006
+  },
+  "stops": [
+    {
+      "lat": 40.7589,
+      "lon": -73.9851,
+      "priority": 1
+    },
+    {
+      "lat": 40.7614,
+      "lon": -73.9776,
+      "priority": 2
+    },
+    {
+      "lat": 40.7489,
+      "lon": -73.968,
+      "priority": 1
+    },
+    {
+      "lat": 40.7308,
+      "lon": -73.9973,
+      "priority": 3
+    }
+  ],
+  "algorithm": "simulated_annealing"
+}
